@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- FLOATING MUSIC NOTES -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvNote1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎵"
+                android:textSize="24sp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvNote2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎶"
+                android:textSize="20sp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tvNote3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎼"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvRhymesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎵 Pyari Rhymes 🎈"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#0277BD"
+                    android:shadowColor="#81D4FA"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▶ Dabao aur gaao! 🎤"
+                    android:textSize="13sp"
+                    android:textColor="#01579B"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- RHYME CARD 1: Twinkle Twinkle -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRhyme1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#FFF9C4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/iconRhyme1"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:text="⭐"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="14dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Twinkle Twinkle Little Star"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#F57F17"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayRhyme1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="▶"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_blue"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textRhyme1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twinkle, twinkle, little star,\nHow I wonder what you are!\nUp above the world so high,\nLike a diamond in the sky.\nTwinkle, twinkle, little star,\nHow I wonder what you are!"
+                    android:textSize="17sp"
+                    android:textColor="#5D4037"
+                    android:fontFamily="serif"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- RHYME CARD 2: Baa Baa Black Sheep -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRhyme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#E1BEE7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/iconRhyme2"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:text="🐑"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink"
+                        android:layout_marginEnd="14dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Baa Baa Black Sheep"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#6A1B9A"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayRhyme2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="▶"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink_btn"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textRhyme2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baa, baa, black sheep,\nHave you any wool?\nYes sir, yes sir,\nThree bags full.\nOne for the master,\nOne for the dame,\nAnd one for the little boy\nWho lives down the lane."
+                    android:textSize="17sp"
+                    android:textColor="#4A148C"
+                    android:fontFamily="serif"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- RHYME CARD 3: Humpty Dumpty -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRhyme3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#C8E6C9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:id="@+id/iconRhyme3"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:text="🥚"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="14dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Humpty Dumpty"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#2E7D32"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayRhyme3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="▶"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_blue"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textRhyme3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humpty Dumpty sat on a wall,\nHumpty Dumpty had a great fall.\nAll the king's horses and all the king's men,\nCouldn't put Humpty together again."
+                    android:textSize="17sp"
+                    android:textColor="#1B5E20"
+                    android:fontFamily="serif"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 Sing, Clap, and Have Fun! 🎉"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#0277BD"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

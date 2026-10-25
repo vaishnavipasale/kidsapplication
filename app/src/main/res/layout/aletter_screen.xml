@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:padding="16dp">
+
+    <!-- Card Container -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        card_view:cardCornerRadius="24dp"
+        card_view:cardElevation="10dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Big Alphabet Letter -->
+            <TextView
+                android:id="@+id/tvLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="110sp"
+                android:textStyle="bold"
+                android:textColor="#FF6F00"
+                android:shadowColor="#BDBDBD"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="6" />
+
+            <!-- Image Background Circle -->
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgLetter"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/img_14"
+                    android:contentDescription="Alphabet Image"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- Word Text -->
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:layout_marginTop="20dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A for Apple 🍎"
+                android:textSize="18sp"
+                android:textColor="#616161"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

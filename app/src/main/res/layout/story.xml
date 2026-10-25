@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E8F5E9"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- FLOATING BOOK + SPARKLES -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/tvSparkle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨"
+                android:textSize="20sp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvSparkle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌟"
+                android:textSize="18sp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvStoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📚 Chhoti Kahaniyan 🌈"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▶ Dabao aur kahani suno! 🔊"
+                    android:textSize="13sp"
+                    android:textColor="#33691E"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- STORY CARD 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStory1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#E3F2FD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/iconStory1"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🦁"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Lion and the Mouse"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#1565C0"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayStory1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:text="▶"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_blue"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textStory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A lion once caught a tiny mouse. The mouse begged for mercy and promised to help someday. The lion laughed and let it go. Later, the lion got trapped in a net. The mouse helped by biting the ropes. The lion learned that even small friends can be helpful."
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- STORY CARD 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStory2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#FFF3E0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/iconStory2"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🐢"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Hare and the Tortoise"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#E65100"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayStory2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:text="▶"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink_btn"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textStory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A fast hare challenged a slow tortoise to a race. The hare ran quickly and slept midway thinking he would win. The tortoise kept moving slowly and steadily. In the end, the tortoise won the race. The story teaches us that slow and steady wins the race."
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- STORY CARD 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStory3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#FCE4EC">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/iconStory3"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="🌳"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Honest Woodcutter"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#C2185B"/>
+
+                    <TextView
+                        android:id="@+id/btnPlayStory3"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:text="▶"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink_btn"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textStory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A woodcutter dropped his axe into a river. A fairy appeared and showed him a golden axe, but he refused it. Then she showed a silver axe, but he refused again. Finally, she gave him his own axe. The fairy was impressed by his honesty and rewarded him."
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

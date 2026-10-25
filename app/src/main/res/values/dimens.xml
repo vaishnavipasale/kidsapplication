@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dashboard category-card sizes. Overridden for small phones (values-sw360dp)
+         and tablets (values-sw600dp) so the grid always feels right-sized. -->
+    <dimen name="dashboard_card_height">145dp</dimen>
+    <dimen name="dashboard_wide_card_height">100dp</dimen>
+</resources>

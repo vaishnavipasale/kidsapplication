@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/poem_bg_gradient"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/screenRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- DECORATIVE CLOUDS AT TOP -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☁️"
+                android:textSize="32sp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌈"
+                android:textSize="28sp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☁️"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="2dp"/>
+        </FrameLayout>
+
+        <!-- FUN HEADER WITH FLOATING ELEMENTS -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Left floating decoration -->
+            <TextView
+                android:id="@+id/tvStar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐"
+                android:textSize="28sp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvStar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌟"
+                android:textSize="24sp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="25dp"/>
+
+            <!-- Right floating decoration -->
+            <TextView
+                android:id="@+id/tvStar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨"
+                android:textSize="26sp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tvStar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💫"
+                android:textSize="22sp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="20dp"/>
+
+            <!-- Center title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📖 Meri Kavita Kitab 🌸"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF6F00"
+                    android:fontFamily="casual"
+                    android:shadowColor="#FFCC02"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="8"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎵 Kavita pe tap karo, suno! 🎵"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#BF360C"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="#FFF3E0"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- POEM CARD 1: The Morning Glow -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPoem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="16dp"
+            app:cardBackgroundColor="#FFF9C4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Card Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:text="☀️"
+                        android:textSize="32sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_yellow"
+                        android:layout_marginEnd="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Morning Glow"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="#F57F17"
+                            android:fontFamily="casual"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌿 A cheerful morning poem"
+                            android:textSize="13sp"
+                            android:textColor="#F9A825"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnPlayPoem1"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="▶"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_blue"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <!-- Decorative divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFEE58"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Poem Content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:background="#FFFDE7"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="☀️  The sun wakes up and starts to glow,"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🎨  It paints the sky with a golden show!"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🐦  The birds go tweet and the bees go buzz,"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="✨  Morning is magic — it always was!"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="👣  Jump out of bed and wiggle your toes,"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌍  The whole big world is where fun goes!"
+                        android:textSize="18sp" android:textColor="#212121"
+                        android:fontFamily="serif"/>
+                </LinearLayout>
+
+                <!-- Rating and decoration -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🎉 Super fun!"
+                        android:textSize="12sp"
+                        android:textColor="#F57F17"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⭐⭐⭐⭐⭐"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- POEM CARD 2: Nature's Beauty -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPoem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="16dp"
+            app:cardBackgroundColor="#F8BBD0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Card Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:text="🌸"
+                        android:textSize="32sp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink"
+                        android:layout_marginEnd="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nature's Beauty"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="#880E4F"
+                            android:fontFamily="casual"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌺 Colors of our world"
+                            android:textSize="13sp"
+                            android:textColor="#C2185B"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnPlayPoem2"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="▶"
+                        android:textSize="22sp"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:background="@drawable/circle_pink_btn"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </LinearLayout>
+
+                <!-- Decorative divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#F48FB1"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Poem Content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:background="#FCE4EC"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌺  The flowers dance and the butterflies spin,"
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🎶  Nature is bursting with colour and din!"
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌳  The trees reach up to tickle the sky,"
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="☁️  And fluffy white clouds go floating by."
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌧️  Rain goes drip and the rainbow appears,"
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🎉  The world is the best gift — hip hip CHEERS!"
+                        android:textSize="18sp" android:textColor="#4A148C"
+                        android:fontFamily="serif"/>
+                </LinearLayout>
+
+                <!-- Rating and decoration -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="� Beautiful!"
+                        android:textSize="12sp"
+                        android:textColor="#880E4F"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌸🌸🌸🌸🌸"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BOTTOM FUN STRIP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 Padhte Raho! Seekhte Raho! 🎉"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
